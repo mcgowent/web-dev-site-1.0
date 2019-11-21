@@ -1,0 +1,40 @@
+.main{
+    height: 89vh;
+    background-color: #18bc9c;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+    .circle{
+        width:250px;
+        height: 250px;
+        background:#2c3e50;
+
+        border-radius: 250px;
+        margin-top: -3rem;
+    }
+    .header-name{
+        font-size: 4.75rem;
+        font-family: sans-serif;
+        font-weight: 700;
+
+        margin-top: 3rem;
+    }
+    .line-star{
+        width: 250px;
+        height: 4px;
+        background-color:white;
+
+        margin-top: 2rem;
+    }
+    .sub-title{
+        font-size: 1.75rem;
+        font-family: 'Lato';
+        font-weight: lighter;
+
+        margin-top: 2rem;
+    }
+}

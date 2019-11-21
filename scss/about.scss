@@ -1,0 +1,63 @@
+.about{
+    height: 75vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #18bc9c;
+    color:white;
+
+
+    .header-about{
+      margin-top:5rem;
+
+      text-align: center;
+      font-size: 3rem;
+      font-family: sans-serif;
+      font-weight: 700;
+
+    }
+    .line-star-a{
+    width: 250px;
+    height: 4px;
+    background-color:white;
+
+    margin-top: 2rem;
+    }
+
+    .about-p-div {
+        display:flex;
+        width:45%;
+        margin:1rem;
+        padding:1rem;
+        .about-p {
+            padding:.85rem;
+            font-size: 1.50rem;
+    
+            font-family: "Lato";
+            font-weight: lighter;
+            line-height: 1.5;
+        }
+    }
+
+    .about-button-div {
+        .about-button {
+            margin-right: 1rem;
+            padding: 1rem 1.75rem;
+            font-family: "Lato";
+            font-size: 1.25rem;
+            font-weight: 400;
+            background: none;
+            color:white;
+            border: 1px solid white;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+        .about-button:hover {
+            color:#212529;
+            background-color:#f8f9fa;
+            border-color:#f8f9fa;
+        }
+    }
+}
