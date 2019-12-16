@@ -1,0 +1,46 @@
+
+                
+                .slide-in {
+                    animation-name: entrance;
+                    animation-duration: 1.5s;
+                }
+                @keyframes entrance {
+                      0% {
+                        opacity: 0;
+                        transform: translateX(-2000px);
+                    }
+                    60% {
+                        opacity: 1;
+                        transform: translateX(30px);
+                    }
+                    80% {
+                        transform: translateX(-10px);
+                    }
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
+
+                .slide-left {
+                    animation-name: slide-left;
+                    animation-duration: 1.5s;
+                }
+                @keyframes slide-left {
+                    0% {display:none;}
+                    0% {margin-left:-500px;}
+                    20% {opacity: 40%;}
+                    95% {opacity: 100%;}
+                    100% {margin-right:0;}
+                }
+
+                .slide-right {
+                    animation-name: slide-right;
+                    animation-duration: 1.5s;
+                }
+                @keyframes slide-right {
+                    0% {display:none;}
+                    0% {margin-right:-500px;}
+                    20% {opacity: 40%;}
+                    95% {opacity: 100%;}
+                    100% {margin-right:0;}
+                }

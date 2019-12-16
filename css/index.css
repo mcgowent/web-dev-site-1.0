@@ -48,7 +48,79 @@ table {
   margin: 0 auto;
 }
 
+.slide-in {
+  animation-name: entrance;
+  animation-duration: 1.5s;
+}
+
+@keyframes entrance {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.slide-left {
+  animation-name: slide-left;
+  animation-duration: 1.5s;
+}
+
+@keyframes slide-left {
+  0% {
+    display: none;
+  }
+  0% {
+    margin-left: -500px;
+  }
+  20% {
+    opacity: 40%;
+  }
+  95% {
+    opacity: 100%;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+.slide-right {
+  animation-name: slide-right;
+  animation-duration: 1.5s;
+}
+
+@keyframes slide-right {
+  0% {
+    display: none;
+  }
+  0% {
+    margin-right: -500px;
+  }
+  20% {
+    opacity: 40%;
+  }
+  95% {
+    opacity: 100%;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .header {
+  transition: 0.6s;
   width: 100%;
   font-family: sans-serif;
   background-color: #2c3e50;
@@ -70,11 +142,13 @@ table {
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
+  transition: 0.6s;
 }
 .header .nav .ul {
   width: 25%;
   display: flex;
   justify-content: space-around;
+  transition: 0.6s;
 }
 .header .nav .ul .li {
   color: white;
@@ -83,7 +157,7 @@ table {
 }
 
 .main {
-  height: 89vh;
+  height: 100vh;
   background-color: #18bc9c;
   display: flex;
   flex-direction: column;
@@ -142,17 +216,15 @@ table {
 .portfolio .grid-container {
   width: 70%;
   display: grid;
-  grid-column-gap: 25px;
-  grid-row-gap: 25px;
+  grid-column-gap: 45px;
+  grid-row-gap: 45px;
   grid-template-columns: auto auto auto;
-  padding: 10px;
 }
 .portfolio .grid-container .grid-item {
   background-color: rgba(15, 15, 15, 0.8);
   border: 3px solid #18bc9c;
   font-size: 30px;
-  height: 15rem;
-  text-align: center;
+  height: 180px;
 }
 
 .about {
