@@ -1,5 +1,4 @@
 .main{
-
     height: 100vh;
     background-color: #18bc9c;
 
@@ -9,6 +8,30 @@
     align-items: center;
 
     color:white;
+
+    // Logos for Social Meda
+    .logo-band {
+        display:flex;
+
+        margin:1rem;
+
+        border-radius: .25rem;
+        background-color: #1bd8b2;
+
+        img {
+            padding: .75rem;
+        }
+        a:hover{
+            border-radius: .25rem;
+            background-color: white;
+
+            img {
+                border-radius: .25rem;
+                background-color: white;
+            }
+        }
+    }
+
     .circle{
         width:250px;
         height: 250px;

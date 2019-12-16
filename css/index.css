@@ -48,6 +48,11 @@ table {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1900px) {
+  .wrapper {
+    width: 90%;
+  }
+}
 .slide-in {
   animation-name: entrance;
   animation-duration: 1.5s;
@@ -148,12 +153,23 @@ table {
   width: 25%;
   display: flex;
   justify-content: space-around;
-  transition: 0.6s;
 }
 .header .nav .ul .li {
   color: white;
+  text-decoration: none;
   font-size: 1.2rem;
   font-weight: 600;
+}
+.header .nav .ul .li a:hover {
+  color: #2c3e50;
+  background-color: white;
+  cursor: pointer;
+}
+.header .nav .ul .li a {
+  border-radius: 0.25rem;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
 }
 
 .main {
@@ -164,6 +180,23 @@ table {
   justify-content: center;
   align-items: center;
   color: white;
+}
+.main .logo-band {
+  display: flex;
+  margin: 1rem;
+  border-radius: 0.25rem;
+  background-color: #1bd8b2;
+}
+.main .logo-band img {
+  padding: 0.75rem;
+}
+.main .logo-band a:hover {
+  border-radius: 0.25rem;
+  background-color: white;
+}
+.main .logo-band a:hover img {
+  border-radius: 0.25rem;
+  background-color: white;
 }
 .main .circle {
   width: 250px;
@@ -214,30 +247,77 @@ table {
   margin-bottom: 2rem;
 }
 .portfolio .grid-container {
-  width: 70%;
+  width: 100%;
   display: grid;
   grid-column-gap: 45px;
   grid-row-gap: 45px;
+  transition: 1.6s;
   grid-template-columns: auto auto auto;
 }
 .portfolio .grid-container .grid-item {
-  background-color: rgba(15, 15, 15, 0.8);
-  border: 3px solid #18bc9c;
+  width: 100%;
   font-size: 30px;
-  height: 180px;
+  height: 300px;
+}
+.portfolio .grid-container .grid-item .div-p {
+  width: 30rem;
+  background-color: #18bc9c;
+  border: 1px solid #ffffff;
+  height: 70%;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio .grid-container .grid-item .div-p:hover {
+  background-image: url("../assets/20191001_Kickstarter_Success.gif");
+}
+.portfolio .grid-container .grid-item .div-p:hover h3 {
+  display: none;
+}
+.portfolio .grid-container .grid-item h3 {
+  color: #2c3e50;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.portfolio .grid-container .grid-item img {
+  display: none;
+}
+.portfolio .grid-container .grid-item .button-p {
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio .grid-container .grid-item .button-p button {
+  margin-top: 2%;
+  padding: 3% 16.75%;
+  font-family: "Lato";
+  font-size: 1.25rem;
+  font-weight: 400;
+  background: none;
+  color: #2c3e50;
+  border: 1px solid #2c3e50;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.portfolio .grid-container .grid-item .button-p button:hover {
+  color: white;
+  background-color: #1cd1ad;
+  border-color: #f8f9fa;
+  font-weight: bold;
 }
 
 .about {
-  height: 75vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #18bc9c;
   color: white;
 }
 .about .header-about {
-  margin-top: 5rem;
+  margin-top: 10rem;
   text-align: center;
   font-size: 3rem;
   font-family: sans-serif;
@@ -269,16 +349,21 @@ table {
   font-size: 1.25rem;
   font-weight: 400;
   background: none;
-  color: white;
   border: 1px solid white;
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.about .about-button-div .about-button a {
+  color: white;
+  text-decoration: none;
+}
 .about .about-button-div .about-button:hover {
-  color: #212529;
   background-color: #f8f9fa;
+}
+.about .about-button-div .about-button:hover a {
   border-color: #f8f9fa;
+  color: #212529;
 }
 
 .footer {
