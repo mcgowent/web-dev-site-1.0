@@ -129,8 +129,8 @@ table {
   width: 100%;
   font-family: sans-serif;
   background-color: #2c3e50;
-  padding-top: 2.4rem;
-  padding-bottom: 2.4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .header .nav {
   max-width: 110rem;
@@ -140,6 +140,16 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header .nav .flex-header {
+  display: flex;
+  align-items: center;
+}
+.header .nav .flex-header .logo-header {
+  background-color: white;
+  border-radius: 25rem;
+  margin-right: 1rem;
+  width: 60px;
 }
 .header .nav .name-logo {
   text-decoration: none;
@@ -180,6 +190,7 @@ table {
   justify-content: center;
   align-items: center;
   color: white;
+  padding-top: 6.5rem;
 }
 .main .logo-band {
   display: flex;
@@ -309,15 +320,16 @@ table {
 }
 
 .about {
-  height: 100vh;
+  height: 100%;
   display: flex;
+  padding-bottom: 8rem;
   flex-direction: column;
   align-items: center;
   background-color: #18bc9c;
   color: white;
 }
 .about .header-about {
-  margin-top: 10rem;
+  margin-top: 8rem;
   text-align: center;
   font-size: 3rem;
   font-family: sans-serif;
@@ -394,9 +406,20 @@ table {
   background-color: #1a252f;
   color: white;
   text-align: center;
-  font-size: 0.75rem;
   padding-top: 1.5rem;
+  font-size: 0.75rem;
+}
+.footer .credit {
+  font-size: 0.75rem;
+  background-color: #1a252f;
+  color: black;
+  padding-top: 0.5rem;
   padding-bottom: 1.5rem;
+  text-align: center;
+}
+.footer .credit a {
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=index.css.map */
