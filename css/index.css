@@ -295,6 +295,25 @@ table {
   display: flex;
   justify-content: space-between;
 }
+.portfolio .grid-container .grid-item .button-p a {
+  margin-top: 2%;
+  padding: 3% 16.75%;
+  font-family: "Lato";
+  font-size: 1.25rem;
+  font-weight: 400;
+  border: 1px solid #2c3e50;
+  color: #2c3e50;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-decoration: none;
+}
+.portfolio .grid-container .grid-item .button-p a:hover {
+  color: white;
+  background-color: #1cd1ad;
+  border-color: #f8f9fa;
+  font-weight: bold;
+}
 .portfolio .grid-container .grid-item .button-p button {
   margin-top: 2%;
   padding: 3% 16.75%;
@@ -382,6 +401,7 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: red;
   width: 50%;
 }
 .modal-content .content .bottom-right {
@@ -407,6 +427,41 @@ table {
   line-height: 1.5;
 }
 
+@media only screen and (max-width: 950px) {
+  .modal-content .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .modal-content .content .top-left {
+    width: 95%;
+    background-color: blue;
+    padding: 0;
+    padding-bottom: 1.9rem;
+  }
+  .modal-content .content .bottom-right {
+    padding-left: 0;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-content .content .bottom-right p {
+    font-size: 1rem;
+    font-family: "Lato";
+    font-weight: lighter;
+    line-height: 1.5;
+  }
+  .modal-content .content .bottom-right ol {
+    list-style-type: square;
+  }
+  .modal-content .content .bottom-right ol li {
+    font-size: 1rem;
+    font-family: "Lato";
+    font-weight: lighter;
+    line-height: 1.5;
+  }
+}
 /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -422,6 +477,7 @@ table {
   cursor: pointer;
 }
 
+/* Portrait */
 .about {
   height: 100%;
   display: flex;
