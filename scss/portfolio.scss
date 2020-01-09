@@ -19,7 +19,7 @@
     .line-star-p {
       margin: 0 auto;
 
-      width: 250px;
+      width: 14rem;
       height: 4px;
       background-color:#2c3e50;
 
@@ -27,7 +27,7 @@
       margin-bottom: 2rem;
     }
   .grid-container {
-    width:75%;
+    // width:75%;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -37,7 +37,6 @@
 
       .grid-item {
         font-size: 30px;
-        height: 300px;
         text-align: center;
 
         padding: 2rem;
@@ -52,17 +51,20 @@
 
         .div-p {
           width: 30rem;
-          background-color: #18bc9c;
-          border: 1px solid #ffffff;
-          height: 70%;
+          // background-color: #18bc9c;
+          // border: 1px solid #ffffff;
+          // height: 70%;
           border-radius: .25rem;
           display:flex;
           justify-content: center;
           align-items: center;
         }
         img {
+          border: 1.2px solid #2c3e50;
+          border-radius: .25rem;
 
-          display:none;
+          // padding-bottom: 10rem;
+          // display:none;
         }
         .button-p {
             display:flex;

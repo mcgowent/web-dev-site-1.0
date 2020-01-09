@@ -4,7 +4,9 @@
     width: 100%;
 
 }
-
+.topnav {
+    display:none;
+}
     .header{
         transition: 0.6s;
 
@@ -86,6 +88,8 @@
 }
 
 .topnav {
+    display:block;
+
     transition: 0.6s;
 
 
