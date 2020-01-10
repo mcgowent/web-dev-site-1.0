@@ -437,6 +437,9 @@ body {
   .portfolio .grid-container .grid-item {
     padding: 2rem 0;
   }
+  .portfolio .grid-container .grid-item h3 {
+    font-size: 1.5rem;
+  }
   .portfolio .grid-container .grid-item .div-p {
     width: 20rem;
   }
