@@ -354,6 +354,7 @@ body {
   align-items: center;
 }
 .portfolio .grid-container .grid-item img {
+  width: 100%;
   border: 1.2px solid #2c3e50;
   border-radius: 0.25rem;
 }
@@ -514,6 +515,23 @@ body {
     font-size: 1rem;
   }
 }
+@media only screen and (max-width: 650px) {
+  .portfolio .grid-container {
+    padding: 0;
+  }
+  .portfolio .grid-container .grid-item {
+    padding: 2rem 0;
+  }
+  .portfolio .grid-container .grid-item .div-p {
+    width: 20rem;
+  }
+  .portfolio .grid-container .grid-item .button-p a {
+    padding: 0.5rem 2.5rem;
+  }
+  .portfolio .grid-container .grid-item .button-p button {
+    padding: 0.5rem 2.5rem;
+  }
+}
 /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -589,6 +607,20 @@ body {
   color: #212529;
 }
 
+@media only screen and (max-width: 650px) {
+  .about .about-p-div {
+    width: 90%;
+  }
+  .about .about-button-div {
+    display: flex;
+  }
+  .about .about-button-div .about-button {
+    margin-right: 0rem;
+    margin: 0.5rem;
+    padding: 1rem 1.25rem;
+    font-size: 0.99rem;
+  }
+}
 .footer {
   font-family: "Lato";
 }

@@ -60,6 +60,8 @@
           align-items: center;
         }
         img {
+          width:100%;
+
           border: 1.2px solid #2c3e50;
           border-radius: .25rem;
 
@@ -121,15 +123,6 @@
           }
       }
     }
-        //     @media only screen and (max-width: 1900px) {
-        //    .grid-container {
-        //       width: 80%;
-        //       display: grid;
-        //       grid-column-gap: 25px;
-        //       grid-row-gap: 25px;
-        //       grid-template-columns: auto auto auto;
-        //   }
-        // }
   }
 }
 
@@ -256,7 +249,104 @@
     }
   }
 
+  @media only screen and (max-width: 650px) {
+.portfolio {
+  .grid-container {
+    // width:75%;
+    // display:flex;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
 
+    padding: 0;
+
+
+      .grid-item {
+        // font-size: 30px;
+        // text-align: center;
+
+        padding: 2rem 0;
+
+        h3 {
+          // color:#2c3e50;
+          // font-family: sans-serif;
+          // font-weight: 700;
+          // font-size: 1.3rem;
+          // padding-bottom: 1rem;
+        }
+
+        .div-p {
+          width: 20rem;
+          // background-color: #18bc9c;
+          // border: 1px solid #ffffff;
+          // height: 70%;
+          // border-radius: .25rem;
+          // display:flex;
+          // justify-content: center;
+          // align-items: center;
+        }
+        img {
+          // width:100%;
+
+          // border: 1.2px solid #2c3e50;
+          // border-radius: .25rem;
+
+          // padding-bottom: 10rem;
+          // display:none;
+        }
+        .button-p {
+            // display:flex;
+            // justify-content: space-between;
+             a {
+                // margin-top: 2%;
+                padding: .5rem 2.5rem;
+                // font-family: "Lato";
+                // font-size: 1.25rem;
+                // font-weight: 400;
+                // border: 1px solid #2c3e50;
+                // color:#2c3e50;
+                // line-height: 1.5;
+                // border-radius: .25rem;
+                // transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                // text-decoration: none;
+
+            }
+          // a:hover {
+
+          //       color:white;
+          //       background-color:#1cd1ad;
+          //       border-color:#f8f9fa;
+          //       font-weight: bold;
+          // }
+
+          button {
+              // margin-top: 2%;
+              padding: .5rem 2.5rem;
+              // font-family: "Lato";
+              // font-size: 1.25rem;
+              // font-weight: 400;
+              // background: none;
+              // border: 1px solid #2c3e50;
+              // color:#2c3e50;
+              // line-height: 1.5;
+              // border-radius: .25rem;
+              // transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+              a {
+                // text-decoration: none;
+                // color:#2c3e50;
+              }
+          }
+          // button:hover {
+
+          //       a {
+          //       }
+          // }
+      }
+    }
+  }
+
+  }
+}
 
 
 /* The Close Button */
