@@ -1,11 +1,25 @@
-.about{
+.about-max-width {
+    background-color: #18bc9c;
+
+    // added to center
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+
+    .about{
+
+        width:100%;
+        // margin: auto 0;
+    max-width: 1500px;
     height: 100%;
     display:flex;
     padding-bottom: 8rem;
     flex-direction: column;
     align-items: center;
-    background-color: #18bc9c;
     color:white;
+
+
+
     .header-about{
       margin-top:8rem;
       text-align: center;
@@ -58,8 +72,9 @@
         }
     }
 }
-
+}
 @media only screen and (max-width:650px) {
+    .about-max-width {
     .about{
         .about-p-div {
             width:90%;
@@ -75,4 +90,5 @@
 
         }
     }
+}
 }

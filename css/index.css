@@ -306,6 +306,7 @@ body {
   }
 }
 .portfolio {
+  max-width: 1500px;
   padding-top: 4rem;
   padding-bottom: 2rem;
   display: flex;
@@ -378,7 +379,16 @@ body {
   text-align: left;
   font-family: "Lato";
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
+}
+.portfolio .grid-container .grid-item .div-p div ul li {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Lato";
+  list-style: square;
+  list-style-position: inside;
+  text-align: left;
+  line-height: 1.5;
 }
 .portfolio .grid-container .grid-item .button-p {
   display: flex;
@@ -450,42 +460,49 @@ body {
     padding: 0.5rem 2.5rem;
   }
 }
-.about {
+.about-max-width {
+  background-color: #18bc9c;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about-max-width .about {
+  width: 100%;
+  max-width: 1500px;
   height: 100%;
   display: flex;
   padding-bottom: 8rem;
   flex-direction: column;
   align-items: center;
-  background-color: #18bc9c;
   color: white;
 }
-.about .header-about {
+.about-max-width .about .header-about {
   margin-top: 8rem;
   text-align: center;
   font-size: 3rem;
   font-family: sans-serif;
   font-weight: 700;
 }
-.about .line-star-a {
+.about-max-width .about .line-star-a {
   width: 250px;
   height: 4px;
   background-color: white;
   margin-top: 2rem;
 }
-.about .about-p-div {
+.about-max-width .about .about-p-div {
   display: flex;
   width: 45%;
   margin: 1rem;
   padding: 1rem;
 }
-.about .about-p-div .about-p {
+.about-max-width .about .about-p-div .about-p {
   padding: 0.85rem;
   font-size: 1.5rem;
   font-family: "Lato";
   font-weight: lighter;
   line-height: 1.5;
 }
-.about .about-button-div .about-button {
+.about-max-width .about .about-button-div .about-button {
   margin-right: 1rem;
   padding: 1rem 1.75rem;
   font-family: "Lato";
@@ -497,26 +514,26 @@ body {
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.about .about-button-div .about-button a {
+.about-max-width .about .about-button-div .about-button a {
   color: white;
   text-decoration: none;
 }
-.about .about-button-div .about-button:hover {
+.about-max-width .about .about-button-div .about-button:hover {
   background-color: #f8f9fa;
 }
-.about .about-button-div .about-button:hover a {
+.about-max-width .about .about-button-div .about-button:hover a {
   border-color: #f8f9fa;
   color: #212529;
 }
 
 @media only screen and (max-width: 650px) {
-  .about .about-p-div {
+  .about-max-width .about .about-p-div {
     width: 90%;
   }
-  .about .about-button-div {
+  .about-max-width .about .about-button-div {
     display: flex;
   }
-  .about .about-button-div .about-button {
+  .about-max-width .about .about-button-div .about-button {
     margin-right: 0rem;
     margin: 0.5rem;
     padding: 1rem 1.25rem;
