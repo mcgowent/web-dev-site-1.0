@@ -1,1 +1,1 @@
-# web-dev-site-1.0
+# Personal Portfolio Website of Timothy McGowen, FullStack Developer
