@@ -3,199 +3,32 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Timothy M. McGowen</title>
+    <title>Timothy McGowen</title>
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.ico">
     <link rel="stylesheet" href="css/index.css">
-    <!-- <meta name="viewport" content="width=device-width, maximum-scale=1.0" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body id="top">
-    <header class="header slide-down sticky">
+    <header class="header">
         <nav class="nav wrapper">
-            <div class="slide-left flex-header">
-                <img src="./assets/Icon_Color_PNG.png" alt="timothy mcgowen logo" class="logo-header" />
-                <a class="name-logo" href="#top"> T.M. McGowen</a>
+            <h1><a href="#top">Timothy McGowen</a></h1>
+            <a class="phone" href="tel:+4808151007">480-815-1007</a>
+            <a class="email" href="mailto:mcgowen.dev@gmail.com">Mcgowen.dev@gmail.com</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/timothymcgowen/" target="_blank"><i class="icon-linkedin-sign"></i></a>
+                <a href="https://github.com/mcgowent" target="_blank"><i class="icon-github-sign"></i></a>
             </div>
-            <ul class="ul slide-right">
-                <li class="li"><a href="#projects">PROJECTS</a></li>
-                <li class="li"><a href="#about">ABOUT</a></li>
-                <li class="li"><a href="https://resume.creddle.io/resume/3bryghub5sg">RESUME</a></li>
-            </ul>
         </nav>
-    </header>
-    <div class="topnav slide-in sticky">
-        <a href="#home" class="active">T.M. McGowen</a>
-        <div id="myLinks">
-            <a href="#projects">PROJECTS</a>
-            <a href="#about">ABOUT</a>
-            <a href="https://resume.creddle.io/resume/3bryghub5sg">RESUME</a>
+        <div class="intro-text">
+            <h2>Hello!</h2>
+            <h4>I am a Web Developer.</h4>
+            <h3>Take a look at some on my projects below.</h3>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <section>
-        <article class="main">
-            <!-- Image circle -->
-            <img src="assets/self.png" alt="cartoon self Timothy McGowen" class="circle slide-in"></img>
-            <h1 class="header-name slide-in">Timothy McGowen</h1>
-            <!-- Bar Image with Star in the Middle -->
-            <div class="line-star slide-in"></div>
-            <p class="sub-title slide-in">Web Developer</p>
-            <ul class="slide-in logo-band">
-                <li><a href="https://www.linkedin.com/in/timothymcgowen/" target="_blank"><img
-                            src="./assets/001-linkedin.png" alt="linkedin Logo" /></a></li>
-                <li><a href="https://github.com/mcgowent" target="_blank"><img src="./assets/002-github.png"
-                            alt="github logo" /></a></li>
-                <li><a href="mailto:mcgowen.dev@gmail.com"><img src="./assets/003-telegram.png" alt="email logo" /></a>
-                </li>
-            </ul>
-        </article>
-        <article class="wrapper portfolio" id="projects">
-            <h2 class="header-section">PROJECTS</h2>
-            <!-- Bar Image with Star in the Middle -->
-            <div class="line-star-p"></div>
-            <div class="grid-container">
+    </header>
 
-                <!-- Kickstarter Success Card -->
-                <div class="grid-item">
-                    <h3>KickStarter Success</h3>
-                    <div class="div-p">
-                        <img src="./assets/Kickstart_ScreenCapture.PNG" />
-                        <div>
-                            <h4>NodeJS | Express | Knex | MySQLite</h4>
-                            <p> An application that takes machine learning data and inputs from the user to give
-                                reliable percentages of success for a potential Kickstarter project.
-                            </p>
-                            <ul>
-                                <li>Created the backend using nodeJS, Express, Knex, MySQLite for development and
-                                    PostgreSQL for deployment.</li>
-                                <li>Took data from the front end and the data machine learning API and parsed it
-                                    into readable data for the user.</li>
-                                <li>Assisted in the front end state management and the construction of the marketing
-                                    site.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="button-p">
-                        <a href="https://github.com/Kickstarter-Success/Backend" target="_blank">
-                            GitHub</a>
-                        <a href="https://kickstart-success.netlify.com/index.html" target="_blank">Project</a>
-                    </div>
-                </div>
-
-                <!-- Chef Portfolio Card -->
-                <div class="grid-item">
-                    <h3>Bohcura: Chef Portfolio</h3>
-                    <div class="div-p">
-                        <img src="./assets/Chef Portfolio.PNG" />
-                        <div>
-                            <h4>React | Axios | Redux | Styled Components | Formik</h4>
-                            <p> An application that lets a Chef create a profile that will track their recipes and view
-                                the recipe of other chefs.
-                                <ul>
-                                    <li>Worked in all aspects of the app to ensure team involvement and our ability to
-                                        meet the deadline.</li>
-                                    <li>Set up the Redux store and actions required to do CRUD operations.</li>
-                                    <li>Worked closely with other React Devs to set up the onboarding process forms and
-                                        creating a unique approach to a split
-                                        information gathering form.</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="button-p">
-                        <a href="https://github.com/build-week-chefportfolio/Frontend-Developer"
-                            target="_blank">GitHub</a>
-                        <a href=" https://bohcura-app.netlify.com/" target="_blank">Project</a>
-                    </div>
-                </div>
-
-                <!-- Dead or Alive: Celebrity Card -->
-                <div class="grid-item">
-                    <h3>Celebrity: Dead or Alive</h3>
-                    <div class="div-p">
-                        <img src="./assets/DeadorAlive.PNG" />
-                        <div>
-                            <h4>React | Axios | React Hooks | Styled Components</h4>
-                            <p> An application that pulls from an API of celebrity names and lets you guess if they are
-                                still alive or not then tracks
-                                your score and displays a global score of all users.
-                                <ul>
-                                    <li>Developed game logic by rendering a list of celebrities to the React front-end
-                                        from API backend.</li>
-                                    <li>Built out an onboarding flow that captured and persisted user scores.</li>
-                                    <li>Worked with a team to build out the UI functionality.</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="button-p">
-                        <a href="https://github.com/bw-celebrity-dead-or-alive/bwcda-frontend-react"
-                            target="_blank">GitHub</a>
-                        <a href="https://celebrity-dead-alive-frontend.netlify.com/" target="_blank">Project</a>
-                    </div>
-                </div>
-
-                <!-- Project Firefly Card -->
-                <div class="grid-item">
-                    <h3>Project Firefly</h3>
-                    <div class="div-p">
-                        <img src="./assets/FireflyHomepage.PNG" />
-                        <div>
-                            <h4>React | Axios | NodeJS | MongoDB | Mongoose</h4>
-                            <p>
-                                Firefly is a web application that was built to help teach young children how to code
-                                through fun visuals and simple
-                                controls.
-                                <ul>
-                                    <li>Created a marketing site as a doorway for new visitors to be directed to the
-                                        application.</li>
-                                    <li>Created an onboarding application separate from the Firefly game application to
-                                        better streamline the flow of data.</li>
-                                    <li>Integrated Stripe, Zendesk and a custom forum to get the application business
-                                        ready.</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="button-p">
-                        <a href="https://linktr.ee/mcgowen" target="_blank">GitHub</a>
-                        <a href="https://lambda-school-labs.github.io/project-firefly-site/" target="_blank">Project</a>
-                    </div>
-                </div>
-
-            </div>
-        </article>
-        <article class="about-max-width">
-            <div class="about" id="about">
-                <h2 class="header-about">ABOUT</h2>
-                <div class="line-star-a"></div>
-                <div class="about-p-div">
-                    <p class="about-p">Web Developer versed in React, Redux, SASS/SCSS, HTML, CSS, Javascript, NodeJS,
-                        Knex,
-                        Express, mySQL, MongoDB, Moongoose and more. I am always learning and have spent the last five
-                        years
-                        on and off working on websites. I am looking to join a team where I can stretch my understanding
-                        and
-                        learn new
-                        technologies.</p>
-                </div>
-                <div class="about-button-div">
-                    <!-- <button class="about-button"><a href="./assets/Resume.pdf" download>Download Resume</a></button> -->
-                    <button class="about-button"><a href="https://resume.creddle.io/resume/3bryghub5sg">View
-                            Resume</a></button>
-                </div>
-            </div>
-        </article>
-    </section>
-    <footer class="footer">
-        <p class="footer-copyright">Copyright &copy Timothy M. McGowen 2020</p>
-        <div class="credit">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
-            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-    </footer>
 
 </body>
 
