@@ -43,11 +43,19 @@ table {
   border-spacing: 0;
 }
 
+html {
+  background-color: #fff;
+}
+
 .header {
   font-family: "Kameron", serif;
   color: #fff;
 }
 .header .nav {
+  transition: padding ease-in-out 300ms;
+  position: sticky;
+  top: 0;
+  left: 0;
   background-color: #4B4B4B;
   padding: 20px 10px 10px;
   display: flex;
@@ -75,6 +83,12 @@ table {
     padding-bottom: 0;
   }
 }
+.header .nav a {
+  transition: color ease-in 150ms;
+}
+.header .nav a:hover {
+  color: #18bc9c;
+}
 .header .nav h1 > a,
 .header .nav .phone {
   text-decoration: none;
@@ -92,6 +106,10 @@ table {
   .header .nav .phone {
     font-size: 30px;
   }
+}
+.header .nav h1,
+.header .nav h1 > a {
+  transition: font-size ease 300ms, color ease-in 150ms;
 }
 @media (min-width: 1024px) {
   .header .nav h1,
@@ -120,6 +138,7 @@ table {
   }
 }
 .header .nav .social-icons {
+  background-color: #4B4B4B;
   width: 250px;
   display: flex;
   justify-content: space-evenly;
@@ -130,6 +149,7 @@ table {
   margin-bottom: 0;
 }
 .header .nav .social-icons a i {
+  transition: font-size ease 200ms, color ease-in 150ms;
   font-size: 50px;
   color: #fff;
 }
@@ -143,19 +163,41 @@ table {
     font-size: 50px;
   }
 }
+.header .nav .social-icons a i:hover {
+  transition: color ease-in 150ms;
+  color: #18bc9c;
+}
 .header .intro-text {
   padding: 45px 15px;
   color: #3D3D3D;
+}
+@media (min-width: 1024px) {
+  .header .intro-text {
+    padding: 80px 140px;
+  }
+}
+.header .intro-text span {
+  color: #18bc9c;
 }
 .header .intro-text h2 {
   color: inherit;
   font-size: 60px;
   font-weight: bold;
 }
+@media (min-width: 1024px) {
+  .header .intro-text h2 {
+    font-size: 104px;
+  }
+}
 .header .intro-text h4 {
   color: inherit;
   font-size: 24px;
   padding-top: 15px;
+}
+@media (min-width: 1024px) {
+  .header .intro-text h4 {
+    font-size: 41px;
+  }
 }
 .header .intro-text h3 {
   color: inherit;
@@ -164,6 +206,96 @@ table {
   font-size: 26px;
   padding-top: 15px;
   line-height: 1.3em;
+}
+@media (min-width: 1024px) {
+  .header .intro-text h3 {
+    font-size: 51px;
+  }
+}
+.header .ham-menu {
+  background-color: #4B4B4B;
+  width: 64px;
+  color: inherit;
+  font-weight: bold;
+  font-size: 21px;
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+}
+.header .ham-menu ul li {
+  display: none;
+  cursor: pointer;
+  transition: color ease-in 150ms;
+  padding: 10px;
+}
+.header .ham-menu ul li i {
+  padding-left: 10px;
+}
+.header .ham-menu ul .open {
+  display: block;
+}
+.header .ham-menu li:hover {
+  transition: color ease-in 150ms;
+  background-color: #18bc9c;
+}
+.header .ham-menu.active {
+  background-color: #4B4B4B;
+  width: 125px;
+  bottom: 10%;
+}
+.header .ham-menu.active ul li {
+  display: block;
+}
+.header .ham-menu.active ul li i {
+  padding-left: 40px;
+}
+.header .ham-menu.active ul .open {
+  display: none;
+}
+.header .ham-menu.active li:hover {
+  transition: color ease-in 1500ms;
+  background-color: #18bc9c;
+}
+
+.header.active .nav {
+  padding: 10px 20px 3px;
+}
+.header.active .nav a, .header.active .nav h1 {
+  padding-bottom: 5px;
+}
+.header.active .nav h1 > a,
+.header.active .nav .phone {
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .header.active .nav .phone {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1024px) {
+  .header.active .nav h1,
+.header.active .nav h1 > a {
+    font-size: 22px;
+  }
+}
+.header.active .nav .email {
+  font-size: 16px;
+}
+@media (min-width: 1024px) {
+  .header.active .nav .email {
+    font-size: 22px;
+  }
+}
+.header.active .nav .social-icons {
+  width: 300px;
+}
+.header.active .nav .social-icons a i {
+  font-size: 25px;
+}
+@media (min-width: 1024px) {
+  .header.active .nav .social-icons a i {
+    font-size: 25px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
