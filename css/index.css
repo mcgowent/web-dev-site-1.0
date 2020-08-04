@@ -318,7 +318,7 @@ body {
 .portfolio .header-section {
   text-align: center;
   font-size: 3rem;
-  font-family: sans-serif;
+  font-family: "Lato", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: 700;
   color: #2c3e50;
 }
@@ -343,7 +343,7 @@ body {
 }
 .portfolio .grid-container .grid-item h3 {
   color: #3d566e;
-  font-family: sans-serif;
+  font-family: "Lato", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   padding-bottom: 1rem;
@@ -369,7 +369,7 @@ body {
   background-color: #2c3e50;
   padding: 1rem;
   color: white;
-  font-family: sans-serif;
+  font-family: "Lato", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .portfolio .grid-container .grid-item .div-p div h4 {
   font-size: 1rem;
@@ -378,14 +378,14 @@ body {
 .portfolio .grid-container .grid-item .div-p div p {
   line-height: 1.5;
   text-align: left;
-  font-family: "Lato";
+  font-family: "Lato", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 1rem;
   font-weight: 400;
 }
 .portfolio .grid-container .grid-item .div-p div ul li {
   font-size: 1rem;
   font-weight: 400;
-  font-family: "Lato";
+  font-family: "Lato", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   list-style: square;
   list-style-position: inside;
   text-align: left;
@@ -398,7 +398,7 @@ body {
 .portfolio .grid-container .grid-item .button-p a {
   margin-top: 2%;
   padding: 1rem 5rem;
-  font-family: "Lato";
+  font-family: "Lato", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
   border: 1px solid #2c3e50;
@@ -417,7 +417,7 @@ body {
 .portfolio .grid-container .grid-item .button-p button {
   margin-top: 2%;
   padding: 1rem 5rem;
-  font-family: "Lato";
+  font-family: "Lato", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
   background: none;
