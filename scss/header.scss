@@ -3,7 +3,8 @@
     color: #fff;
     .nav {
         transition: padding ease-in-out 300ms;
-        position: sticky;
+        position: fixed;
+        width: calc(100% - 35px);
         top: 0;
         left: 0;
         background-color: #4B4B4B;
@@ -101,9 +102,11 @@
         }
     }
     .intro-text {
+        margin-top: 200px;
         padding: 45px 15px;
         color: #3D3D3D;
         @media (min-width:1024px) {
+            margin-top: 100px;
             padding: 80px 140px;
         }
         span {
@@ -144,9 +147,15 @@
         color: inherit;
         font-weight: bold;
         font-size: 21px;
-        position: absolute;
+        position: fixed;
         bottom: 10%;
         right: 0;
+        @media (min-width: 1024px) {
+            bottom: unset;
+            top: 195px;
+            right: unset;
+            left: 0;
+        }
         ul {
             li {
                 display: none;
@@ -170,6 +179,9 @@
         background-color: #4B4B4B;
         width: 125px;
         bottom: 10%;
+        @media (min-width: 1024px) {
+            bottom: unset;
+        }
         ul {
             li {
                 display: block;
@@ -229,3 +241,6 @@
     }
 }
 
+.test {
+    height: 1000px;
+}

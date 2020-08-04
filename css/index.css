@@ -53,7 +53,8 @@ html {
 }
 .header .nav {
   transition: padding ease-in-out 300ms;
-  position: sticky;
+  position: fixed;
+  width: calc(100% - 35px);
   top: 0;
   left: 0;
   background-color: #4B4B4B;
@@ -168,11 +169,13 @@ html {
   color: #18bc9c;
 }
 .header .intro-text {
+  margin-top: 200px;
   padding: 45px 15px;
   color: #3D3D3D;
 }
 @media (min-width: 1024px) {
   .header .intro-text {
+    margin-top: 100px;
     padding: 80px 140px;
   }
 }
@@ -218,9 +221,17 @@ html {
   color: inherit;
   font-weight: bold;
   font-size: 21px;
-  position: absolute;
+  position: fixed;
   bottom: 10%;
   right: 0;
+}
+@media (min-width: 1024px) {
+  .header .ham-menu {
+    bottom: unset;
+    top: 195px;
+    right: unset;
+    left: 0;
+  }
 }
 .header .ham-menu ul li {
   display: none;
@@ -242,6 +253,11 @@ html {
   background-color: #4B4B4B;
   width: 125px;
   bottom: 10%;
+}
+@media (min-width: 1024px) {
+  .header .ham-menu.active {
+    bottom: unset;
+  }
 }
 .header .ham-menu.active ul li {
   display: block;
@@ -296,6 +312,10 @@ html {
   .header.active .nav .social-icons a i {
     font-size: 25px;
   }
+}
+
+.test {
+  height: 1000px;
 }
 
 /*# sourceMappingURL=index.css.map */
