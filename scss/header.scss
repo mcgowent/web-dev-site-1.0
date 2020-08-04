@@ -86,15 +86,24 @@
     .intro-text {
         padding: 45px 15px;
         color: #3D3D3D;
+        @media (min-width:1024px) {
+            padding: 80px 140px;
+        }
         h2 {
             color: inherit;
             font-size: 60px;
             font-weight: bold;
+            @media (min-width: 1024px) {
+                font-size: 104px;
+            }
         }
         h4 {
             color: inherit;
             font-size: 24px;
             padding-top: 15px;
+            @media (min-width: 1024px) {
+                font-size: 41px;
+            }
         }
         h3 {
             color: inherit;
@@ -103,6 +112,9 @@
             font-size: 26px;
             padding-top: 15px;
             line-height: 1.3em;
+            @media (min-width: 1024px) {
+                font-size: 51px;
+            }
         }
     }
 

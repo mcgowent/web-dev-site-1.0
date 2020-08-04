@@ -147,15 +147,30 @@ table {
   padding: 45px 15px;
   color: #3D3D3D;
 }
+@media (min-width: 1024px) {
+  .header .intro-text {
+    padding: 80px 140px;
+  }
+}
 .header .intro-text h2 {
   color: inherit;
   font-size: 60px;
   font-weight: bold;
 }
+@media (min-width: 1024px) {
+  .header .intro-text h2 {
+    font-size: 104px;
+  }
+}
 .header .intro-text h4 {
   color: inherit;
   font-size: 24px;
   padding-top: 15px;
+}
+@media (min-width: 1024px) {
+  .header .intro-text h4 {
+    font-size: 41px;
+  }
 }
 .header .intro-text h3 {
   color: inherit;
@@ -164,6 +179,11 @@ table {
   font-size: 26px;
   padding-top: 15px;
   line-height: 1.3em;
+}
+@media (min-width: 1024px) {
+  .header .intro-text h3 {
+    font-size: 51px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
