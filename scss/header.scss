@@ -109,6 +109,7 @@
         @media (min-width:1024px) {
             margin-top: 100px;
             padding: 80px 140px;
+            padding-bottom: 35px;
         }
         span {
             color: #18bc9c;
@@ -144,7 +145,7 @@
     // Hamburger Menu
     .ham-menu {
         background-color: #4B4B4B;
-        width: 64px;
+        width: 50px;
         color: inherit;
         font-weight: bold;
         font-size: 21px;
@@ -161,10 +162,14 @@
             li {
                 display: none;
                 cursor: pointer;
-                transition: color ease-in 150ms;
+                transition: background ease-in 200ms;
                 padding:10px;
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
                 i {
-                    padding-left: 10px;
+                    padding-left: 5px;
                 }
             }
             .open {
@@ -172,7 +177,7 @@
             }
         }
         li:hover {
-            transition: color ease-in 150ms;
+            transition: background ease-in 200ms;
             background-color: #18bc9c;
         }
     }
@@ -199,10 +204,6 @@
                 }
             }
 
-        }
-        li:hover {
-            transition: color ease-in 1500ms;
-            background-color: #18bc9c;
         }
     }
 }
@@ -246,8 +247,4 @@
             }
         }
     }
-}
-
-.test {
-    height: 1000px;
 }
