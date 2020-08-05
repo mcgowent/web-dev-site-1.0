@@ -50,17 +50,18 @@ html {
 .header {
   font-family: "Kameron", serif;
   color: #fff;
+  height: 60vh;
+  margin-top: 40vh;
 }
-/* Commit */
 .header .nav {
   z-index: 10;
   transition: padding ease-in-out 300ms;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   background-color: #4B4B4B;
-  padding: 20px 10px;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,7 +97,7 @@ html {
 .header .nav h1 > a,
 .header .nav .phone {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
   color: inherit;
   font-weight: bold;
 }
@@ -131,7 +132,7 @@ html {
 }
 .header .nav .email {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   color: inherit;
   text-transform: uppercase;
   font-weight: bold;
@@ -283,7 +284,7 @@ html {
 }
 
 .header.active .nav {
-  padding: 10px 20px 3px;
+  padding: 10px 0 3px;
 }
 .header.active .nav a, .header.active .nav h1 {
   padding-bottom: 5px;
@@ -380,7 +381,10 @@ html {
   }
 }
 .resume .yellow .skills, .resume .yellow .employment, .resume .yellow .education {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
+}
+.resume .yellow .skills p, .resume .yellow .employment p, .resume .yellow .education p {
+  font-size: 21px;
 }
 .resume .yellow div {
   margin-top: 10px;

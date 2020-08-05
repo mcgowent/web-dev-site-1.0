@@ -1,15 +1,17 @@
 .header {
     font-family: 'Kameron', serif;
     color: #fff;
+    height: 60vh;
+    margin-top: 40vh;
     .nav {
         z-index: 10;
         transition: padding ease-in-out 300ms;
         position: fixed;
-        width: 100%;
+        width: 100vw;
         top: 0;
         left: 0;
         background-color: #4B4B4B;
-        padding: 20px 10px;
+        padding: 20px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -41,7 +43,7 @@
         h1 > a,
         .phone {
             text-decoration: none;
-            font-size: 30px;
+            font-size: 20px;
             color: inherit;
             font-weight: bold;
         }
@@ -68,7 +70,7 @@
         }
         .email {
             text-decoration: none;
-            font-size: 22px;
+            font-size: 18px;
             color: inherit;
             text-transform: uppercase;
             font-weight: bold;
@@ -211,7 +213,7 @@
 // header Active Styles
 .header.active {
     .nav {
-        padding:10px 20px 3px;
+        padding:10px 0 3px;
         a, h1 {
             padding-bottom:5px;
         }
