@@ -542,18 +542,21 @@ html {
     width: 352px;
   }
 }
-.projects .grid-item .div-p:hover img {
+.projects .grid-item .div-p:hover img,
+.projects .grid-item .div-p:active img {
   opacity: 0;
 }
 .projects .grid-item .div-p .img-cont {
   height: 100%;
   width: 100%;
 }
-.projects .grid-item .div-p:hover .img-cont {
+.projects .grid-item .div-p:hover .img-cont,
+.projects .grid-item .div-p:active .img-cont {
   position: relative;
   background-color: #4B4B4B;
 }
-.projects .grid-item .div-p:hover ul li {
+.projects .grid-item .div-p:hover ul li,
+.projects .grid-item .div-p:active ul li {
   opacity: 1;
   z-index: 10;
   position: relative;

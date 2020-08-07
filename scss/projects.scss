@@ -92,18 +92,21 @@
                 width:352px;
             }
         }
-        .div-p:hover img {
+        .div-p:hover img,
+        .div-p:active img {
             opacity: 0;
         }
         .div-p .img-cont {
             height: 100%;
             width: 100%;
         }
-        .div-p:hover .img-cont {
+        .div-p:hover .img-cont,
+        .div-p:active .img-cont {
             position: relative;
             background-color: #4B4B4B;
         }
-         .div-p:hover ul li {
+         .div-p:hover ul li,
+         .div-p:active ul li {
              opacity: 1;
              z-index: 10;
              position: relative;
