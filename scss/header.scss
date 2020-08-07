@@ -4,7 +4,7 @@
     height: 60vh;
     margin-top: 40vh;
     .nav {
-        z-index: 10;
+        z-index: 99;
         transition: padding ease-in-out 300ms;
         position: fixed;
         width: 100vw;
@@ -150,7 +150,8 @@
     }
     // Hamburger Menu
     .ham-menu {
-        background-color: #4B4B4B;
+        z-index: 999;
+        background-color: #18bc9c;
         width: 50px;
         color: inherit;
         font-weight: bold;
