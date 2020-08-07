@@ -65,11 +65,12 @@
                 left:10%;
                 width: 80%;
                 height: 75%;
+                pointer-events: none;
                 @media (min-width: 1200px) {
                 top: 20%;
-
                 }
                 li {
+                    pointer-events: none;
                     font-size: 14px;
                     opacity: 0;
                     font-weight: bold;
